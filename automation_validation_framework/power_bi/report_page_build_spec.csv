@@ -1,0 +1,19 @@
+Page,Visual,Fields,What it shows
+Workflow Overview,Card,Total Requests,Overall request volume
+Workflow Overview,Card,Failure Rate,Quality/error rate of requests
+Workflow Overview,Card,Estimated Time Saved Hours,Estimated efficiency gain
+Workflow Overview,Stacked bar,Status by Department,Request workload distribution
+Workflow Overview,Line chart,Request Date + Total Requests,Request volume over time
+Request Status,Bar chart,Status + Total Requests,Backlog and completion mix
+Request Status,Matrix,Department + Priority + Status,Operational request breakdown
+Request Status,Slicers,Department; Priority; Status; Owner,Interactive filtering
+Validation Failures,Bar chart,Issue Code + Count,Top validation failure reasons
+Validation Failures,Donut chart,Validation Severity + Count,Failure severity distribution
+Validation Failures,Table,Request ID; Issue Codes; Issue Description,Failed request details
+Bottleneck Analysis,Bar chart,Workflow Stage + Avg Processing Days,Stages slowing down workflow
+Bottleneck Analysis,Card,SLA Breaches,Overdue request count
+Bottleneck Analysis,Table,Request ID; Owner; Workflow Stage; Processing Time Days,Requests requiring follow-up
+Efficiency Gains,Card,Manual Review Reduction %,Estimated manual effort reduction
+Efficiency Gains,Clustered column,Department + Total Time Saved Min,Time saved by department
+Efficiency Gains,Clustered column,Manual Review Minutes vs Automated Review Minutes,Before/after comparison
+Exception Drilldown,Table,Request ID; Department; Owner; Priority; Issue Code; Action Needed,Stakeholder action queue

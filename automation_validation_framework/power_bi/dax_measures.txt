@@ -1,0 +1,27 @@
+Total Requests = COUNTROWS('Validation Output')
+
+Passed Requests = CALCULATE(COUNTROWS('Validation Output'), 'Validation Output'[Validation Result] = "Pass")
+
+Failed Requests = CALCULATE(COUNTROWS('Validation Output'), 'Validation Output'[Validation Result] = "Fail")
+
+Failure Rate = DIVIDE([Failed Requests], [Total Requests])
+
+Pass Rate = DIVIDE([Passed Requests], [Total Requests])
+
+Completed Requests = CALCULATE(COUNTROWS('Validation Output'), 'Validation Output'[Status] = "Completed")
+
+SLA Breaches = CALCULATE(COUNTROWS('Validation Output'), 'Validation Output'[SLA Breached] = "Yes")
+
+Bottleneck Requests = CALCULATE(COUNTROWS('Validation Output'), 'Validation Output'[Bottleneck Flag] = "Yes")
+
+Avg Processing Days = AVERAGE('Validation Output'[Processing Time Days])
+
+Manual Review Minutes = SUM('Validation Output'[Estimated Manual Review Min])
+
+Automated Review Minutes = SUM('Validation Output'[Estimated Automated Review Min])
+
+Estimated Time Saved Min = [Manual Review Minutes] - [Automated Review Minutes]
+
+Estimated Time Saved Hours = DIVIDE([Estimated Time Saved Min], 60)
+
+Manual Review Reduction % = DIVIDE([Estimated Time Saved Min], [Manual Review Minutes])

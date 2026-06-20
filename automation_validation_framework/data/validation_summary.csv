@@ -1,0 +1,10 @@
+Metric,Value
+Total Requests,525
+Passed Requests,89
+Failed Requests,436
+Pass Rate,0.1695
+Failure Rate,0.8305
+Estimated Manual Review Min,11507
+Estimated Automated Review Min,7050
+Estimated Time Saved Min,4457
+Estimated Manual Review Reduction,0.3873

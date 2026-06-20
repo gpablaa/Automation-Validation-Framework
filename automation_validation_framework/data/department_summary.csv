@@ -1,0 +1,7 @@
+Department,Total Requests,Failed Requests,Completed Requests,Failure Rate,Avg Processing Days,Total Time Saved Min
+Business Enablement,96,77,23,0.8021,15.98,755
+Engineering,84,66,22,0.7857,14.32,736
+Finance,87,74,22,0.8506,14.24,748
+Operations,84,71,14,0.8452,16.57,729
+Product,85,75,24,0.8824,17.34,727
+QA,89,73,28,0.8202,14.22,762
